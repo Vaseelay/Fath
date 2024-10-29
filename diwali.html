@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+     color: green;
+     font-size: 100px; 
+    }
+    p{
+        font-size: 25px;
+
+    }
+</style>
+<body>
+    <script>
+        function launchConfetti() {
+        const duration = 7 * 1000; // 10 seconds
+        const end = Date.now() + duration;
+        const colors = ['#ffeb3b', '#8F00FF', '#ff5722', '#4caf50', '#FFFFFF',"#000000"];
+        (function frame() {
+            confetti({
+                particleCount: 6, // Reduced number of particles
+                startVelocity: 80,
+                spread: 450,
+                ticks: 190,
+                origin: { x: 0.5, y: 0.5 }, // Start from top center
+                colors: colors,
+            });
+            if (Date.now() < end) {
+                requestAnimationFrame(frame);
+            }
+        }());
+    }
+    window.onload = function() {
+        launchConfetti();
+    }
+    </script>
+    <form action="diwali.html"></form>
+    <h1><center>HAPPY DIWALI</center></h1>
+    <p>
+        Diwali is a festival that celebrates the victory of light over darkness and good over evil. It is also known as the Festival of Lights and is celebrated in many different ways across religions and regions:
+Diwali is celebrated for a number of reasons, including:
+The return of Prince Rama, his wife Sita, and brother Lakshman to Ayodhya after 14 years of exile.
+The defeat of the demon king Ravana by Prince Rama.
+The defeat of the demon Narakasura by Lord Krishna, who freed 16,000 girls from captivity.
+The celebration of Goddess Lakshmi, the goddess of wealth and prosperity.
+The celebration of Goddess Kali, who symbolizes the victory of good over evil.
+    </p>
+    <div class="diwali-content">
+        </div>
+        <marquee>
+        <div class="gallery">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx8hyYv0v8OVuXQPdZoPfbtM5xRQ2-oXYcXw&s">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgtQpfHZxaaSUW9vkVCj9xgG1-FkG8uskmFQ&s">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUKLOe_vrhmPxVAj0DJBdlw7uZdNysxc5KNA&s">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReCMfZy2-4e2Wy2a6fVQ0Fbulw9gd6iuFo0Q&s">
+    </div>
+    </marquee>
+</body>
+</html>

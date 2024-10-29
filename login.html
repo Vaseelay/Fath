@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form{
+        padding:50px;
+        background-color:antiquewhite;
+    }
+    body{
+        background-color:cadetblue;
+        margin: auto;
+        margin-top: 50px;
+        display:flex;
+        align-items:center;
+        justify-content:space-around;
+    }
+    img{
+        height:500px;
+        width:auto;
+    }
+    button{
+        background-color:rgba(183, 131, 83, 0.881);
+        padding:10px;
+        border-radius:10%;
+        width:100px;
+    
+    }
+    .form-field input{
+        padding:20px;
+        width:80%;
+        margin:10px 0px;
+        height: 5px;
+    }
+    @media(max-width:430px){
+        body{
+            flex-direction: column;
+            background-color: pink;
+        }
+        button{
+            width: 80%;
+        }
+    }
+</style>
+<body>
+    <form action="diwali.html">
+    <div class="container">
+    <h1 ><center>login</center></h1>
+    <lable><b>user name</b></lable>
+    <div class="form-field"><input type="email"name="username" required  placeholder="enter name"/> <br><br></div>
+    <lable><b>password</b></lable>
+    <div class="form-field "><input type="password" name="password" required placeholder="enter password"/> </div>
+    <button>login</button>
+    <p>
+     don't have an account<a href ="index.html">sign up here</a>
+    </p>
+    </div>
+    </form>
+    <img src="C:\Users\Mizba\OneDrive\Desktop\img1.jpg">
+</body>
+</html>

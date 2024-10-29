@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title{
+            color:goldenrod;
+        }
+        body{
+            background-repeat:no-repeat;
+            background-size: cover;
+        }
+         .parent-container{
+            border-radius:10px;
+            background-color: white;
+            width:30%;
+            padding:2%;
+            text-align:center;
+            margin:auto;
+            margin-top:2%;
+         }
+         .form-field{
+            margin:10px
+         }
+        .form-field input,.form-btn{
+            padding:10px;
+            width:70%;
+         }
+    </style>
+</head>
+<body background="C:\Users\Mizba\OneDrive\Desktop\img1.jpg">
+   <form class="parent-container" action="login.html">
+    <h2 class="title"> Registration</h2>
+    <div class="form-field">
+        <input type="username"name="username" required  placeholder="enter name"/>
+    </div>
+    <div class="form-field ">
+        <input type="password" name="password" required placeholder="enter password"/>
+    </div>
+    <div class="form-field">
+        <input type="confirm password" name="confirm password" required placeholder="confirm password"/>
+    </div>
+    <div class="form-field">
+        <input type="mobile number" name="mobile number" required placeholder="enter mobile number"/>
+    </div>
+    <button class="form-btn"> submit</button>
+    <p>
+        already have an account
+        <a href="login.html">Login</a>
+    </p>
+
+</form>
+</body>
+</html>
